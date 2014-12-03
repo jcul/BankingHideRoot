@@ -14,12 +14,6 @@ public class PatchRooted implements IXposedHookLoadPackage {
 	public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable
 	{
 		// com/cryptomathic/securecore/TrusteerMalwareDetector
-		XposedBridge.log("JACK XPOSED: " + lpparam.packageName);
-		
-		if (lpparam.packageName.contains("cryptomathic"))
-		{
-			XposedBridge.log("MATCHED CRYPT " + lpparam.packageName);
-		}
 		
 	    if (lpparam.packageName.equals("com.cryptomathic.securecore") || lpparam.packageName.equals("com.grppl.android.shell.halifax"))
 	    {
