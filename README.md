@@ -7,7 +7,7 @@ Wrote this module so I could use my bank's application on my rooted android.
 
 Licensed under gpl v3 (see LICENSE file).
 
-It comes with absolutely no warraty of any kind, use at your own risk.
+It comes with absolutely no warranty of any kind, use at your own risk.
 
 At the moment it seems to work with the version of the application I have, which is 5.1.
 
