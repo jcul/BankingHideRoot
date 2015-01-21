@@ -15,9 +15,12 @@ public class PatchRooted implements IXposedHookLoadPackage {
 	{
 		// com/cryptomathic/securecore/TrusteerMalwareDetector
 		
-	    if (lpparam.packageName.equals("com.cryptomathic.securecore") || lpparam.packageName.equals("com.grppl.android.shell.halifax"))
+	    if (
+	    		lpparam.packageName.equals("com.cryptomathic.securecore") ||
+	    		lpparam.packageName.equals("com.grppl.android.shell.halifax") ||
+	    		lpparam.packageName.equals("com.grppl.android.shell.CMBlloydsTSB73")
+	    )
 	    {
-	    
 	    	XposedBridge.log("Loaded " + lpparam.packageName + " replacing isRooted() method");
 	    	findAndHookMethod("com.cryptomathic.securecore.TrusteerMalwareDetector", lpparam.classLoader, "isRooted", XC_MethodReplacement.returnConstant(false));
 	    }
