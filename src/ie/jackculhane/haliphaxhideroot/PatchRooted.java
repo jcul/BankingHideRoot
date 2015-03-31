@@ -15,7 +15,8 @@ public class PatchRooted implements IXposedHookLoadPackage {
 	    	lpparam.packageName.equals("com.cryptomathic.securecore") ||
 	    	lpparam.packageName.equals("com.grppl.android.shell.halifax") ||
 	    	lpparam.packageName.equals("com.grppl.android.shell.CMBlloydsTSB73") ||
-			lpparam.packageName.equals("com.grppl.android.shell.BOS")
+			lpparam.packageName.equals("com.grppl.android.shell.BOS") ||
+			lpparam.packageName.equals("uk.co.tsb.mobilebank")
 	    )
 	    {
 	    	XposedBridge.log("Loaded " + lpparam.packageName + " replacing isRooted() method");
