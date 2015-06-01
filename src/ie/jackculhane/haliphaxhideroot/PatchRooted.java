@@ -27,7 +27,7 @@ public class PatchRooted implements IXposedHookLoadPackage {
             }
             catch (NoSuchMethodError e)
             {
-                XposedBridge.log("Unable to hook new methods, will attempt to patch old isRooted method");
+                XposedBridge.log("Unable to hook new methods, will attempt to patch old isRooted method (" + e.toString() + ")");
                 findAndHookMethod("com.cryptomathic.securecore.TrusteerMalwareDetector", lpparam.classLoader, "isRooted", XC_MethodReplacement.returnConstant(false));
             }
         }        
