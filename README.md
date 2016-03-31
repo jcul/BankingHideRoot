@@ -1,7 +1,7 @@
-HaliphaxHideRoot
+BankingHideRoot
 ================
 
-Xposed Framework module to hide root from certain banking apps in the UK
+Xposed Framework module to hide root from some banking apps in the UK
 
 Wrote this module so I could use my bank's application on my rooted android.
 
@@ -13,3 +13,4 @@ At the moment it seems to work with the version of the application I have, which
 
 It's likely to stop working if the application is updated.
 
+Note: This is not a rooted version of any banking app, it is a module for the Xposed Framework to hide root from the banking apps.
