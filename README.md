@@ -1,7 +1,7 @@
 BankingHideRoot
 ================
 
-**Note:** This module no longer works since release V7 of the halifax, lloyds etc. android apps. Project is discontinued, left here only for reference.
+> **Notice:** _This module is deprecated. It hasn't worked since release V7 of the halifax, lloyds etc. android apps. Project is discontinued, left here only for reference._
 
 Xposed Framework module to hide root from some banking apps in the UK
 
